@@ -25,6 +25,7 @@ int main() {
 
         cout << "\nEnter the name of the student: ";
         cin >> names[i];
+        
 
         for (int j = 0; j < questions; j++) {
             cout << "Enter the marks for question no. " << j + 1 << ": ";

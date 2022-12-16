@@ -5,7 +5,8 @@ using namespace std;
 
 int main() {
     string passengerID;
-    char packageType, mealCombo;
+    char packageType;
+    string mealCombo;
     int adult, child, mealComboQty;
     float adultPrice, childPrice, total, totalMealCombo, totalAll;
 
@@ -25,12 +26,16 @@ int main() {
         cout << "Enter number of child passengers: ";
         cin >> child;
 
-        cout << "Do you want add on a meal combo (Y/N)? ";
+        cout << "Do you want add on a meal combo (Yes/No)? ";
         cin >> mealCombo;
-        mealCombo = toupper(mealCombo);
+
+        for (int i = 0; i < mealCombo.length(); i++) {
+            mealCombo[i] = toupper(mealCombo[i]);
+        }
+
         totalMealCombo = 0;
 
-        if (mealCombo == 'Y') {
+        if (mealCombo == "YES") {
             cout << "Enter quantity meal combo: ";
             cin >> mealComboQty;
 
