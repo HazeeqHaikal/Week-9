@@ -58,18 +58,18 @@ int main() {
 
         totalAll = total + totalMealCombo;
 
-        cout << "---------------------------------------------" << endl;
+        cout << "\n---------------------------------------------" << endl;
         cout << "ETS TICKET INFORMATION - Butterworth to Kuala Lumpur" << endl;
         cout << "---------------------------------------------" << endl;
 
         cout << "\nPASSENGER ID      : " << passengerID << endl;
         cout << "\nNumber of Adults    : " << adult << endl;
         cout << "Number of Children  : " << child << endl;
-        cout << "\nTotal Ticket Price  : RM " << total << endl;
-        cout << "Meal Combo Price    : RM " << totalMealCombo << endl;
-        cout << "Net Ticket Price    : RM " << totalAll << endl;
+        cout << fixed << setprecision(2) << "\nTotal Ticket Price  : RM " << total << endl;
+        cout << fixed << setprecision(2) << "Meal Combo Price    : RM " << totalMealCombo << endl;
+        cout << fixed << setprecision(2) << "Net Ticket Price    : RM " << totalAll << endl;
 
-        cout << "Do you want to continue (Y/N)? ";
+        cout << "\nDo you want to continue (Y/N)? ";
         cin >> choice;
         choice = tolower(choice);
     }
